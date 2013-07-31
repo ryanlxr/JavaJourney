@@ -11,10 +11,6 @@ import java.util.regex.Pattern;
  * @version 1.0
  */
 public class StringMatcher {
-
-	public enum Color {
-		RED, GREEN, BLANK, YELLOW
-	}
 	
 	public static void main(String[] args) {
 		String number0 = "13410011006";
@@ -34,10 +30,6 @@ public class StringMatcher {
 		System.out.println(String.format("before %s, after %s", number6, checkPhoneNum(number6)));
 	
 		System.out.println(getEmailPrefix("text@qq.com"));
-		System.out.println(Color.RED);
-		System.out.println(Color.GREEN);
-		System.out.println(Color.BLANK);
-		System.out.println(Color.YELLOW);
 	}
 
 	public static String getEmailPrefix(String strEmail) {
